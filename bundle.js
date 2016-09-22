@@ -68,7 +68,39 @@
 /* 0 */
 /***/ function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: G:/WebstormProjects/webpack_es6_demo/es6/Person.js: Unexpected token (11:23)\n\n\u001b[0m   9 | \n  10 |     say\u001b[34m\u001b[1m(\u001b[22m\u001b[39m\u001b[34m\u001b[1m)\u001b[22m\u001b[39m \u001b[32m{\u001b[39m\n> 11 |         \u001b[36mreturn\u001b[39m \u001b[31m'我是'\u001b[39m \u001b[1m+\u001b[22m $\u001b[32m{\u001b[39m\u001b[36mthis\u001b[39m\u001b[1m.\u001b[22mname\u001b[32m}\u001b[39m\u001b[31m',我今年'\u001b[39m \u001b[1m+\u001b[22m $\u001b[32m{\u001b[39m\u001b[36mthis\u001b[39m\u001b[1m.\u001b[22mage\u001b[32m}\u001b[39m \u001b[1m+\u001b[22m\u001b[31m'岁了。'\u001b[39m\u001b[1m;\u001b[22m\n     |                        ^\n  12 |     \u001b[32m}\u001b[39m\n  13 | \u001b[32m}\u001b[39m\n  14 | \u001b[0m\n");
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by chenag on 2016/9/22.
+ */
+var Person = function () {
+    function Person(name, age) {
+        _classCallCheck(this, Person);
+
+        this.name = name;
+        this.age = age;
+    }
+
+    _createClass(Person, [{
+        key: 'say',
+        value: function say() {
+            return '我是';
+        }
+    }]);
+
+    return Person;
+}();
+
+exports.default = Person;
 
 /***/ },
 /* 1 */
